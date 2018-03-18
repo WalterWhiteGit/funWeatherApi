@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+header {
+  border-bottom: 2px solid white; }
+  header h1 {
+    color: white;
+    padding: 10px;
+    font-size: 34px; }
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5%; }
+  main figure, main img {
+    border-radius: 8px 8px 0px 0px; }
+  main figcaption {
+    border-radius: 0px 0px 8px 8px;
+    border: solid 1px white;
+    color: white;
+    padding: 5px; }
+  main .return {
+    display: none;
+    color: white;
+    text-align: center;
+    margin-top: 20px; }
+    main .return .weather {
+      text-align: justify;
+      padding: 5px; }
+    main .return .img {
+      width: 150px; }
+    main .return .iconCont {
+      border: solid 1px white;
+      border-radius: 0px 0px 8px 8px; }
+  main .response {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 20px; }
+    main .response input {
+      width: 30%;
+      text-align: center;
+      border: none; }
+  main .button {
+    text-align: center;
+    margin-top: 20px; }
+    main .button input {
+      background-color: #73c9fa;
+      border-radius: 10px;
+      color: white;
+      padding: 10px;
+      font-size: 14px; }
+
+/*# sourceMappingURL=style.css.map */

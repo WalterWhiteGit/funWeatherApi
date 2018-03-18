@@ -1,0 +1,6 @@
+
+@mixin responsive($display,$align){
+
+    display:$display;
+    justify-content: $align;
+}

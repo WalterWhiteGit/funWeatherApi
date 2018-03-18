@@ -1,0 +1,92 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+    background-color:black;
+}
+
+header{
+
+    border-bottom:2px solid white;
+
+    h1{
+        color:white;
+        padding: 10px;
+        font-size:34px;
+    }
+}
+
+main{
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top:5%;
+    figure{
+        border-radius: 8px 8px 0px 0px;
+      
+    }
+        img{
+            @extend figure
+        }
+
+        figcaption{  
+            border-radius: 0px 0px 8px 8px;
+            border: solid 1px white;
+            color:white;
+            padding: 5px;
+
+        }
+.return{
+
+    display:none;
+    color:white;
+    text-align: center;
+    margin-top:20px;
+    .weather{
+        text-align: justify;
+        padding: 5px;
+    }
+    .img{
+
+        width:150px;
+    }
+
+    .iconCont{
+        border:solid 1px white;
+        border-radius : 0px 0px 8px 8px;
+    }
+}        
+.response{
+
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin:0 auto;
+    margin-top:20px;
+    
+    input{
+        width: 30%;
+        text-align: center;
+        border:none;
+    }
+}
+
+.button{
+    text-align: center;
+    margin-top:20px;
+    input{
+        background-color:rgb(115, 201, 250);
+        border-radius:10px;
+        color:white;
+        padding:10px;
+        font-size: 14px;
+
+        }
+    }
+}

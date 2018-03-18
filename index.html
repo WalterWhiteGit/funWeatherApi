@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/smartphone.css">
+    <link rel="stylesheet" href="style/css/desktop.css">
     <title>JustMyWeather</title>
 </head>
 <body>
@@ -12,39 +14,36 @@
     <header>
         <nav class="menu">
             <h1>JustMyWeather</h1>
+
         </nav>
     </header>
     <main>
         <section>
-            <h2></h2>
             <div class="container">
                 <figure>
-                    <img class="fig" src="img/homer_pants.jpg" alt="Homer en calecon">
-                    <figcaption>Moi :OOOh cielo mon beau cielo dis-moi comment me sapper aujourd'hui ?</figcaption>  
+                    <img src="img/homer_pants.jpg" alt="Homer en calecon">
+                    <figcaption>OOOh cielo mon beau cielo dis-moi comment me sapper aujourd'hui ?</figcaption>  
                 </figure>
+                <div class="return">
+                    <h3 class="r-title" >Réponse de Mr Cielo</h3>
+                <p class="weather"></p>
+                <img class="fig" src="" alt="">
+                <div class="iconCont">
+                <img class="img" src="" alt="">
+                </div>
+
+            </div>
                 <div class="response">
-                    <p>Mr Cielo : Quel est ta ville ?</p>
+                    <p>Quel est ta ville ?</p>
                     <input id="city" type="text" placeholder="ville">
                 </div>
-                <input type="button" value="demander">
-                <div class="return">
-                        <h3>Réponse de Mr Cielo</h3>
-                    <p class="weather"></p>
-                    <img class="img" src="" alt="">
-                    <img class="animate" src="" >
-                </div>
+                <div class="button">
+                    <input type="button" value="soumettre">
+                    </div>
             </div>
         </section>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-    </footer>
+    
     <script src="index.js"></script>
 </body>
 </html>
