@@ -8,6 +8,8 @@ let result = document.querySelector('.weather')
 let img = document.querySelector('.img')
 let funImg = document.querySelector('.fig')
 let displayRes = document.querySelector('.return')
+let errMsg = document.querySelector('.error')
+
 
 // Utlisation de l'objet.
 const req = new XMLHttpRequest()
@@ -26,7 +28,7 @@ let ville = document.querySelector("#city")
 *******************************/
 
 // Vériier le champ 
-const checkBtn = ()=> ville.value != ""  ? showWeather(ville.value,unit) : alert('champ vide')
+const checkBtn = ()=> ville.value != ""  ? showWeather(ville.value,unit) : errMsg.textContent='Veuillez saisir une ville'
 
 // Appel vers l'API si champ rempli
 const showWeather = (city,temp)=>{
@@ -47,7 +49,7 @@ const showWeather = (city,temp)=>{
         }
 
         else if(req.readyState === XMLHttpRequest.DONE && req.status === 200) {
-
+            errMsg.textContent=""
             let obj  = JSON.parse(req.responseText)
 
             let minTemp = obj.main.temp_min
