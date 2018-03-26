@@ -34,7 +34,7 @@ const checkBtn = ()=> ville.value != ""  ? showWeather(ville.value,unit) : errMs
 const showWeather = (city,temp)=>{
 
 
-    req.open('GET',`http://api.openweathermap.org/data/2.5/weather?q=${city},fr&units=${temp}&lang=fr&appid=0acd37018790aafd9883a9cb3709adb3`,true)
+    req.open('GET',`https://api.openweathermap.org/data/2.5/weather?q=${city},fr&units=${temp}&lang=fr&appid=0acd37018790aafd9883a9cb3709adb3`,true)
 
 // Tester le retour http    
     req.onreadystatechange = () =>{
